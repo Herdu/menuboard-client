@@ -1,0 +1,17 @@
+{
+  "name": "menuboard-client",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "herdu <mateusz.dobrowolski71@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
