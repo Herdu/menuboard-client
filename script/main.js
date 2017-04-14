@@ -54,7 +54,7 @@ function Data(){
             for (j=0; j<this.products[i].length; j++)
             {
                 var item = this.products[i][j];
-                var value = i+""+j;
+                var value = i.toString()+j.toString();
                 $(table).append('<tr id="'+value+'">'+
                     '<td><input value="'+item['name']+'" />'+"</td>"+
                     '<td><input value="'+item['price']+'" />'+"</td>"+
@@ -78,6 +78,8 @@ function Data(){
 
 
 var deleteTR = function(value){
+    if (value < 10)
+        value = "0" + value;
     console.log("chce usunac "+value);
     $("#"+value).remove();
 }
